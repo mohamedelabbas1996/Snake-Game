@@ -1,0 +1,103 @@
+body {
+    font-family: cursive !important ;
+    background-color: #231f20 !important;
+}
+canvas {
+    border:solid;
+    border-color: lightslategray;
+    border-width: 10px;
+    position: relative;
+    left:25%;
+}
+ 
+#bestScore{
+    visibility:hidden;
+    
+    color: white;
+    /*position: absolute;*/
+    left: 698px;
+    top: 40px;
+    font-size: larger;
+    font-weight: 700;
+}
+#score
+
+{
+    color: white;
+font-weight: 700;
+
+position: absolute;
+top: 21px;
+left: 745px;
+font-size: larger;
+
+    
+}
+.button {
+    background-color: #231f20 !important;
+
+}
+#playAgain  {
+    display:none;
+    position: relative;
+left: 28%;
+top: 60%;
+margin:10px;
+}
+#start  {
+    display:block;
+    position: absolute;
+left: 40%;
+top: 51%;
+}
+#gameOver{
+    padding:12px;
+        
+    background-color: #231f20;
+    display: none;
+    left: 35%;
+    top: 34%;
+color: rgb(184, 184, 189);
+position: absolute;
+}
+#progressBar{
+   display: none;
+    position: relative;
+    left:26%;
+    }
+#progressBlack{
+    position: absolute;
+    width: 500px;
+    height: 18px;
+    left: 0px;
+    top: 0px;
+background-color: black;
+}
+
+#progressYellow{
+    background-color: yellow;
+    position: absolute;
+    width: 500px;
+    height: 18px;
+    left: 0px;
+    top: 0px;
+    animation-name: startTimer;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+   
+
+}
+#gameScreen {
+    position: relative;
+   /* left: 25%;
+    top:50%*/
+}
+
+
+@keyframes startTimer{
+    from {
+        width: 500px;
+    }
+    to {width: 0px;}
+}

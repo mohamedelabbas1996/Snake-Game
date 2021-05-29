@@ -1,0 +1,7 @@
+{
+	"name": "my-package",
+	"scripts": {
+		"server": "server.js"
+	}
+	
+}

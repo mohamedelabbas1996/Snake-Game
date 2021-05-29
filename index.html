@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+        <title>
+    Snake Game
+        </title>
+        
+
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" >
+         <link rel="stylesheet" href="./style.css" >
+        <link rel="stylesheet" href="./bootstrap.min.css" >
+   
+</head>
+<body>
+    <div id ="gameScreen">
+        <div id="scores" > <span  class="center" id ="score">Score : 0</span><br>
+           <span  class="center"   id ="bestScore">Best Score : 0</span> 
+            
+        </div>
+        <canvas id="canvas" >
+        
+        </canvas>
+    
+        <div id="gameOver" ><h1>GAMEOVER</h1>  <br>
+        <span id="gameoverScore">Score : 0</span><br>
+        <span id="gameoverBestScore">Best Score : 0</span><br>
+        <button id ="playAgain" class="btn btn-success button "><i class="fas fa-redo"></i> Replay</button>
+        </div>
+       
+        
+        <button id ="start" class="btn btn-success button"><i class="fas fa-play"> </i> Start Game</button>
+        <br>
+        <span id="progressBar">
+            <div id="progressBlack">
+                
+            </div>
+            <div id="progressYellow"></div>
+        </span>
+    </div>
+    
+    
+
+    <script  src="./jquery.min.js" ></script>
+    <script type="text/javascript" src="./bootstrap.min.js" ></script>
+    <script type="text/javascript" src="./socket.io.js"></script>
+        <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
